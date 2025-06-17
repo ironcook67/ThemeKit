@@ -1,0 +1,15 @@
+{
+  "originHash" : "5f8e3e85330d36c09dab9385674cd445dd00be9c302bc7a55fa5619f91411f89",
+  "pins" : [
+    {
+      "identity" : "colorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ironcook67/ColorKit.git",
+      "state" : {
+        "revision" : "1a63d7db1c0e6472d403d40c6443a50a3a0af79b",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
