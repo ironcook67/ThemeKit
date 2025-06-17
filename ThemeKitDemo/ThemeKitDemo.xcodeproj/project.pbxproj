@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4D6FF9922E00F8630006348A /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4D6FF9912E00F8630006348A /* ThemeKit */; };
+		4D6FF9962E00FF5C0006348A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4D6FF9952E00FF5C0006348A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D6FF9812E00F7C10006348A /* ThemeKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemeKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6FF9952E00FF5C0006348A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +39,7 @@
 		4D6FF9782E00F7C10006348A = {
 			isa = PBXGroup;
 			children = (
+				4D6FF9952E00FF5C0006348A /* README.md */,
 				4D6FF9832E00F7C10006348A /* ThemeKitDemo */,
 				4D6FF9822E00F7C10006348A /* Products */,
 			);
@@ -118,6 +121,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6FF9962E00FF5C0006348A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
