@@ -1,0 +1,24 @@
+{
+  "originHash" : "3363716902d1e49ce65ad6ecfc7fb72ed58da2a0d1f65d6b467517c2552243f1",
+  "pins" : [
+    {
+      "identity" : "colorkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ironcook67/ColorKit.git",
+      "state" : {
+        "revision" : "1a63d7db1c0e6472d403d40c6443a50a3a0af79b",
+        "version" : "1.1.1"
+      }
+    },
+    {
+      "identity" : "themekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ironcook67/ThemeKit",
+      "state" : {
+        "revision" : "94cd511228f0edde0690a8a519a2d8e6df9a9226",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
