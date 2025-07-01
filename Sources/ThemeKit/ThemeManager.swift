@@ -28,7 +28,7 @@ public final class ThemeManager {
 
     /// The active color scheme based on current theme and system appearance
     public var activeColorScheme: ThemeColorScheme {
-        currentTheme.colorScheme(for: currentColorScheme)
+        currentColorScheme == .dark ? currentTheme.dark : currentTheme.light
     }
 
     /// Available themes that can be selected

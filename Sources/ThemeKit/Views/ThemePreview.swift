@@ -44,14 +44,14 @@ public struct ThemePreview: View {
             Text(theme.name)
                 .font(.caption)
                 .fontWeight(.medium)
-                .foregroundColor(themeColors.contrast)
+                .foregroundColor(themeColors.contrast.color)  // TODO: Clean up NamedColor usage
         }
         .padding(12)
-        .background(themeColors.background)
+        .background(themeColors.background.color)
         .overlay(
             RoundedRectangle(cornerRadius: 8)
                 .stroke(
-                    isSelected ? themeColors.accent : themeColors.secondary,
+                    isSelected ? themeColors.accent.color : themeColors.secondary.color,   // TODO: Look into NamedColor and ShapeStyle
                     lineWidth: isSelected ? 2 : 1
                 )
         )

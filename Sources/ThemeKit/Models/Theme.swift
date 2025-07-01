@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ColorKit
 
 /// A complete theme containing both light and dark color schemes.
 ///
@@ -82,21 +83,21 @@ public extension Theme {
         name: "Ocean",
         light: ThemeColorScheme(
             name: "Ocean Light",
-            primary: Color(hexString: "#006994") ?? .blue,
-            secondary: Color(hexString: "#E8F4F8") ?? .cyan,
-            background: Color(hexString: "#F0F9FF") ?? .white,
-            accent: Color(hexString: "#0891B2") ?? .teal,
-            highlight: Color(hexString: "#FEF3C7") ?? .yellow,
-            contrast: Color(hexString: "#1E293B") ?? .black
+            primary: NamedColor("Ocean Deep Blue", hexString: "#006994").color,
+            secondary: NamedColor("Ocean Mist", hexString: "#E8F4F8").color,
+            background: NamedColor("Ocean Foam", hexString: "#F0F9FF").color,
+            accent: NamedColor("Ocean Teal", hexString: "#0891B2").color,
+            highlight: NamedColor("Ocean Sunlight", hexString: "#FEF3C7").color,
+            contrast: NamedColor("Ocean Depth", hexString: "#1E293B").color
         ),
         dark: ThemeColorScheme(
             name: "Ocean Dark",
-            primary: Color(hexString: "#38BDF8") ?? .blue,
-            secondary: Color(hexString: "#1E293B") ?? .gray,
-            background: Color(hexString: "#0F172A") ?? .black,
-            accent: Color(hexString: "#22D3EE") ?? .cyan,
-            highlight: Color(hexString: "#FDE047") ?? .yellow,
-            contrast: Color(hexString: "#F8FAFC") ?? .white
+            primary: NamedColor("Ocean Sky Blue", hexString: "#38BDF8").color,
+            secondary: NamedColor("Ocean Night", hexString: "#1E293B").color,
+            background: NamedColor("Ocean Abyss", hexString: "#0F172A").color,
+            accent: NamedColor("Ocean Cyan", hexString: "#22D3EE").color,
+            highlight: NamedColor("Ocean Lightning", hexString: "#FDE047").color,
+            contrast: NamedColor("Ocean Surface", hexString: "#F8FAFC").color
         )
     )
 
@@ -105,21 +106,21 @@ public extension Theme {
         name: "Forest",
         light: ThemeColorScheme(
             name: "Forest Light",
-            primary: Color(hexString: "#16A34A") ?? .green,
-            secondary: Color(hexString: "#F0FDF4") ?? .mint,
-            background: Color(hexString: "#FEFFFE") ?? .white,
-            accent: Color(hexString: "#EA580C") ?? .orange,
-            highlight: Color(hexString: "#FDE047") ?? .yellow,
-            contrast: Color(hexString: "#1C1917") ?? .black
+            primary: NamedColor("Forest Pine", hexString: "#16A34A").color,
+            secondary: NamedColor("Forest Mint", hexString: "#F0FDF4").color,
+            background: NamedColor("Forest Snow", hexString: "#FEFFFE").color,
+            accent: NamedColor("Forest Autumn", hexString: "#EA580C").color,
+            highlight: NamedColor("Forest Sunbeam", hexString: "#FDE047").color,
+            contrast: NamedColor("Forest Bark", hexString: "#1C1917").color
         ),
         dark: ThemeColorScheme(
             name: "Forest Dark",
-            primary: Color(hexString: "#4ADE80") ?? .green,
-            secondary: Color(hexString: "#1C1917") ?? .gray,
-            background: Color(hexString: "#0C0A09") ?? .black,
-            accent: Color(hexString: "#FB923C") ?? .orange,
-            highlight: Color(hexString: "#FACC15") ?? .yellow,
-            contrast: Color(hexString: "#FAFAF9") ?? .white
+            primary: NamedColor("Forest Lime", hexString: "#4ADE80").color,
+            secondary: NamedColor("Forest Shadow", hexString: "#1C1917").color,
+            background: NamedColor("Forest Earth", hexString: "#0C0A09").color,
+            accent: NamedColor("Forest Ember", hexString: "#FB923C").color,
+            highlight: NamedColor("Forest Glow", hexString: "#FACC15").color,
+            contrast: NamedColor("Forest Moonlight", hexString: "#FAFAF9").color
         )
     )
 }

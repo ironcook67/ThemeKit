@@ -24,7 +24,7 @@ public struct ThemedView<Content: View>: View {
 
     public var body: some View {
         content
-            .background(themeColors.background)
-            .foregroundStyle(themeColors.contrast)
+            .background(themeColors.background.color)       // TODO: Clean up NamedColor usage
+            .foregroundStyle(themeColors.contrast.color)
     }
 }
