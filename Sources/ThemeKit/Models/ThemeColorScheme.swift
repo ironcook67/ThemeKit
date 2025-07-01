@@ -17,7 +17,7 @@ import SwiftUI
 /// - **Accent**: Interactive elements requiring attention (call-to-actions)
 /// - **Highlight**: Sparingly used for emphasis (tags, warnings)
 /// - **Contrast**: Text and icons requiring maximum legibility
-public struct ThemeColorScheme: Identifiable, Hashable, Sendable {
+public struct ThemeColorScheme: Identifiable, Hashable, Sendable, Codable {
     /// A tuple containing all six colors in the scheme
     public typealias SchemeColors = (
         primary: Color,

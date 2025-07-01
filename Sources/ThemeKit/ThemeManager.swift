@@ -9,6 +9,8 @@ import SwiftUI
 import Combine
 
 /// Manages the current theme and provides smooth animated transitions between themes.
+/// Access the current theme colors through the ThemeManager to take advantage of
+/// automatic detection of light and dark mode.
 ///
 /// ThemeManager is an observable object that handles theme switching with animation
 /// and automatically responds to system appearance changes. It provides both

@@ -12,7 +12,7 @@ import SwiftUI
 /// A theme provides a cohesive visual identity by pairing complementary
 /// light and dark color schemes that automatically adapt to the user's
 /// system appearance preferences.
-public struct Theme: Identifiable, Hashable, Sendable {
+public struct Theme: Identifiable, Hashable, Sendable, Codable {
     /// The display name of the theme
     public let name: String
 
@@ -35,6 +35,21 @@ public struct Theme: Identifiable, Hashable, Sendable {
         self.light = light
         self.dark = dark
         self.id = UUID()
+    }
+
+    public init(name: String, light: ThemeColorScheme, dark: ThemeColorScheme, id: UUID) {
+        self.name = name
+        self.light = light
+        self.dark = dark
+        self.id = id
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        name = try container.decode(String.self, forKey: .name)
+        light = try container.decode(ThemeColorScheme.self, forKey: .light)
+        dark = try container.decode(ThemeColorScheme.self, forKey: .dark)
+        id = try container.decode(UUID.self, forKey: .id)
     }
 
     /// Returns the appropriate color scheme for the given color scheme environment.
@@ -108,4 +123,3 @@ public extension Theme {
         )
     )
 }
-
