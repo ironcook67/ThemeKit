@@ -83,21 +83,21 @@ public extension Theme {
         name: "Ocean",
         light: ThemeColorScheme(
             name: "Ocean Light",
-            primary: NamedColor("Ocean Deep Blue", hexString: "#006994").color,
-            secondary: NamedColor("Ocean Mist", hexString: "#E8F4F8").color,
-            background: NamedColor("Ocean Foam", hexString: "#F0F9FF").color,
-            accent: NamedColor("Ocean Teal", hexString: "#0891B2").color,
-            highlight: NamedColor("Ocean Sunlight", hexString: "#FEF3C7").color,
-            contrast: NamedColor("Ocean Depth", hexString: "#1E293B").color
+            primary: NamedColor("Ocean Deep Blue", hexString: "#006994"),
+            secondary: NamedColor("Ocean Mist", hexString: "#E8F4F8"),
+            background: NamedColor("Ocean Foam", hexString: "#F0F9FF"),
+            accent: NamedColor("Ocean Teal", hexString: "#0891B2"),
+            highlight: NamedColor("Ocean Sunlight", hexString: "#FEF3C7"),
+            contrast: NamedColor("Ocean Depth", hexString: "#1E293B")
         ),
         dark: ThemeColorScheme(
             name: "Ocean Dark",
-            primary: NamedColor("Ocean Sky Blue", hexString: "#38BDF8").color,
-            secondary: NamedColor("Ocean Night", hexString: "#1E293B").color,
-            background: NamedColor("Ocean Abyss", hexString: "#0F172A").color,
-            accent: NamedColor("Ocean Cyan", hexString: "#22D3EE").color,
-            highlight: NamedColor("Ocean Lightning", hexString: "#FDE047").color,
-            contrast: NamedColor("Ocean Surface", hexString: "#F8FAFC").color
+            primary: NamedColor("Ocean Sky Blue", hexString: "#38BDF8"),
+            secondary: NamedColor("Ocean Night", hexString: "#1E293B"),
+            background: NamedColor("Ocean Abyss", hexString: "#0F172A"),
+            accent: NamedColor("Ocean Cyan", hexString: "#22D3EE"),
+            highlight: NamedColor("Ocean Lightning", hexString: "#FDE047"),
+            contrast: NamedColor("Ocean Surface", hexString: "#F8FAFC")
         )
     )
 
@@ -106,21 +106,21 @@ public extension Theme {
         name: "Forest",
         light: ThemeColorScheme(
             name: "Forest Light",
-            primary: NamedColor("Forest Pine", hexString: "#16A34A").color,
-            secondary: NamedColor("Forest Mint", hexString: "#F0FDF4").color,
-            background: NamedColor("Forest Snow", hexString: "#FEFFFE").color,
-            accent: NamedColor("Forest Autumn", hexString: "#EA580C").color,
-            highlight: NamedColor("Forest Sunbeam", hexString: "#FDE047").color,
-            contrast: NamedColor("Forest Bark", hexString: "#1C1917").color
+            primary: NamedColor("Forest Pine", hexString: "#16A34A"),
+            secondary: NamedColor("Forest Mint", hexString: "#F0FDF4"),
+            background: NamedColor("Forest Snow", hexString: "#FEFFFE"),
+            accent: NamedColor("Forest Autumn", hexString: "#EA580C"),
+            highlight: NamedColor("Forest Sunbeam", hexString: "#FDE047"),
+            contrast: NamedColor("Forest Bark", hexString: "#1C1917")
         ),
         dark: ThemeColorScheme(
             name: "Forest Dark",
-            primary: NamedColor("Forest Lime", hexString: "#4ADE80").color,
-            secondary: NamedColor("Forest Shadow", hexString: "#1C1917").color,
-            background: NamedColor("Forest Earth", hexString: "#0C0A09").color,
-            accent: NamedColor("Forest Ember", hexString: "#FB923C").color,
-            highlight: NamedColor("Forest Glow", hexString: "#FACC15").color,
-            contrast: NamedColor("Forest Moonlight", hexString: "#FAFAF9").color
+            primary: NamedColor("Forest Lime", hexString: "#4ADE80"),
+            secondary: NamedColor("Forest Shadow", hexString: "#1C1917"),
+            background: NamedColor("Forest Earth", hexString: "#0C0A09"),
+            accent: NamedColor("Forest Ember", hexString: "#FB923C"),
+            highlight: NamedColor("Forest Glow", hexString: "#FACC15"),
+            contrast: NamedColor("Forest Moonlight", hexString: "#FAFAF9")
         )
     )
 }

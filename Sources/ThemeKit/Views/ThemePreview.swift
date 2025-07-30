@@ -58,3 +58,75 @@ public struct ThemePreview: View {
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
+
+// MARK: - Previews
+
+#Preview("Theme Previews - Light") {
+    VStack(spacing: 16) {
+        Text("Available Themes")
+            .font(.headline)
+            .padding(.bottom)
+        
+        HStack(spacing: 12) {
+            ThemePreview(theme: .default, colorScheme: .light, isSelected: true)
+            ThemePreview(theme: .ocean, colorScheme: .light)
+            ThemePreview(theme: .forest, colorScheme: .light)
+        }
+    }
+    .padding()
+    .background(Color.primary.colorInvert())
+}
+
+#Preview("Theme Previews - Dark") {
+    VStack(spacing: 16) {
+        Text("Available Themes")
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding(.bottom)
+        
+        HStack(spacing: 12) {
+            ThemePreview(theme: .default, colorScheme: .dark, isSelected: true)
+            ThemePreview(theme: .ocean, colorScheme: .dark)
+            ThemePreview(theme: .forest, colorScheme: .dark)
+        }
+    }
+    .padding()
+    .background(Color.primary.colorInvert())
+    .preferredColorScheme(.dark)
+}
+
+#Preview("Single Theme Preview") {
+    VStack(spacing: 20) {
+        ThemePreview(theme: .ocean, colorScheme: .light, isSelected: false)
+            .scaleEffect(1.5)
+        
+        Text("Ocean Theme Preview")
+            .font(.caption)
+            .foregroundColor(.secondary)
+    }
+    .padding()
+}
+
+#Preview("Theme Selection Interface") {
+    ScrollView {
+        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 16) {
+            ForEach([Theme.default, .ocean, .forest], id: \.id) { theme in
+                VStack(spacing: 8) {
+                    ThemePreview(theme: theme, colorScheme: .light, isSelected: theme.name == "Ocean")
+                    ThemePreview(theme: theme, colorScheme: .dark, isSelected: theme.name == "Ocean")
+                        .overlay(
+                            Text("Dark")
+                                .font(.caption2)
+                                .foregroundColor(.white)
+                                .padding(2)
+                                .background(.black.opacity(0.7))
+                                .clipShape(RoundedRectangle(cornerRadius: 4))
+                                .offset(x: 30, y: -30)
+                        )
+                }
+            }
+        }
+        .padding()
+    }
+    .background(Color.secondary.opacity(0.1))
+}

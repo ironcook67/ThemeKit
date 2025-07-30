@@ -28,3 +28,85 @@ public struct ThemedView<Content: View>: View {
             .foregroundStyle(themeColors.contrast.color)
     }
 }
+
+// MARK: - Previews
+
+#Preview("Light Theme") {
+    let themeManager = ThemeManager()
+    
+    ThemedView {
+        VStack(spacing: 20) {
+            Text("Welcome to ThemeKit")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Text("This is a themed view that automatically adapts to the current theme's colors.")
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            HStack(spacing: 16) {
+                Button("Primary") {}
+                    .buttonStyle(.borderedProminent)
+                
+                Button("Secondary") {}
+                    .buttonStyle(.bordered)
+            }
+        }
+        .padding()
+    }
+    .themeEnvironment(themeManager)
+    .preferredColorScheme(.light)
+}
+
+#Preview("Dark Theme") {
+    let themeManager = ThemeManager()
+    
+    ThemedView {
+        VStack(spacing: 20) {
+            Text("Welcome to ThemeKit")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Text("This is a themed view that automatically adapts to the current theme's colors.")
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            HStack(spacing: 16) {
+                Button("Primary") {}
+                    .buttonStyle(.borderedProminent)
+                
+                Button("Secondary") {}
+                    .buttonStyle(.bordered)
+            }
+        }
+        .padding()
+    }
+    .themeEnvironment(themeManager)
+    .preferredColorScheme(.dark)
+}
+
+#Preview("Ocean Theme") {
+    let themeManager = ThemeManager(themes: [.ocean], defaultTheme: .ocean)
+    
+    ThemedView {
+        VStack(spacing: 20) {
+            Text("Ocean Theme")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            Text("Deep blue colors inspired by the ocean.")
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            HStack(spacing: 16) {
+                Button("Dive In") {}
+                    .buttonStyle(.borderedProminent)
+                
+                Button("Explore") {}
+                    .buttonStyle(.bordered)
+            }
+        }
+        .padding()
+    }
+    .themeEnvironment(themeManager)
+}
